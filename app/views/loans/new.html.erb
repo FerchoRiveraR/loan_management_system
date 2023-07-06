@@ -1,0 +1,17 @@
+<h1>Create new loan</h1>
+
+<%= form_with(model: @loan) do |form| %>
+  <div>
+    <p>Borrower email: </p>
+    <div>
+      <%= form.email_field :email %>
+    </div>
+  </div>
+  <div>
+    <p>Select the loan type: </p>
+    <%= form.collection_select :loan_type_id, LoanType.order(:name), :id, :name %>
+  </div>
+  <div>
+    <%= form.submit "Create new loan" %>
+  </div>
+<% end %>

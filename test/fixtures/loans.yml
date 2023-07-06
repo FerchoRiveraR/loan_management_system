@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lender: one
+  borrower: one
+  loan_type: one
+  status: 1
+  approved_at: 2023-07-06
+
+two:
+  lender: two
+  borrower: two
+  loan_type: two
+  status: 1
+  approved_at: 2023-07-06
